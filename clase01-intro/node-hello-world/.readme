@@ -1,0 +1,7 @@
+# Los pasos para crear este proyecto fueron:
+
+1. Crear el repositorio del proyecto
+2. Ejecutar en la terminal el comando `npm init --y` (Inicializa un proyecto en node, creando un package.json)
+3. Crear el archivo index.json
+4. Escribir nuestro código
+5. Ejecutar el código con el comando `node index.js`

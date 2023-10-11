@@ -4,5 +4,5 @@
 
 Aquí encontrarás una colección de valiosos fragmentos de código, vistos en clase, y ejemplos prácticos diseñados para mejorar tus habilidades en JavaScript en el ámbito del desarrollo backend. Ya sea que estés empezando y necesites comprender los conceptos fundamentales o si eres un desarrollador experimentado deseando explorar técnicas avanzadas, esta colección es tu recurso central para perfeccionar tus habilidades de desarrollo backend en JavaScript/TypeScript.
 
-##### -  Clase 1: "Bienvenidos al bootcamp".
-#####-  Clase 1: "Repaso de JavaScript".
+- ##### Clase 1: "Bienvenidos al bootcamp".
+- ##### Clase 1: "Repaso de JavaScript".

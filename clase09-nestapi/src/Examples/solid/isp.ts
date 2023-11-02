@@ -14,7 +14,6 @@ export interface Writable<T> {
 
 // user.service.ts
 import { Injectable } from '@nestjs/common';
-import { Readable, Writable } from './interfaces';
 
 // Definición de la estructura de datos para un Usuario.
 export interface User {
@@ -65,11 +64,11 @@ import {
   Put,
   Delete,
 } from '@nestjs/common';
-import { UserService, User } from './user.service';
+// import { UserService, User } from './user.service';
 
 // Controlador que maneja las rutas de la API para los usuarios.
 @Controller('users')
-export class UserController {
+class UserController {
   constructor(private readonly userService: UserService) {}
 
   // Ruta para obtener todos los usuarios.
@@ -105,8 +104,6 @@ export class UserController {
 
 // app.module.ts
 import { Module } from '@nestjs/common';
-import { UserController } from './user.controller';
-import { UserService } from './user.service';
 
 // Módulo principal de la aplicación que registra el controlador y el servicio de usuarios.
 @Module({

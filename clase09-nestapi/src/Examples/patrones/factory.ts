@@ -28,6 +28,7 @@ class ConfigOptionsService {
       provide: 'CONFIG_OPTIONS',
       useFactory: (configService: ConfigOptionsService) => {
         // La factory podría devolver un objeto de configuración más complejo o personalizado.
+        // y lo crea dependiendo de sus necesidades al momento de la ejecución
         return {
           nodeEnv: configService.get('NODE_ENV'),
           port: parseInt(configService.get('PORT'), 10),
@@ -35,7 +36,7 @@ class ConfigOptionsService {
       },
       inject: [ConfigOptionsService],
     },
-    ConfigOptionsService, // Este también necesita ser un proveedor
+    ConfigOptionsService,
   ],
   exports: ['CONFIG_OPTIONS', ConfigOptionsService], // Exportamos CONFIG_OPTIONS para que pueda ser inyectado en otros módulos.
 })
